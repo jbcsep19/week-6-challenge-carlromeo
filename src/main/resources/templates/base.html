@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div th:fragment="navlinks">
+
+<nav>
+    <ul>
+        <li>
+            <a href="/">
+                <div class="icon">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+
+                </div>
+                <div class="name"><span data-text="Home">Home</span></div>
+            </a>
+        </li>
+
+        <li>
+            <a href="/departmentlist">
+                <div class="icon">
+                    <i class="fa fa-folder" aria-hidden="true"></i>
+
+                </div>
+                <div class="name"><span data-text="All Departments">All Departments</span></div>
+            </a>
+        </li>
+
+        <li>
+            <a href="/employeelist">
+                <div class="icon">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+
+                </div>
+                <div class="name"><span data-text="All Employees">All Employees</span></div>
+            </a>
+        </li>
+
+        <li>
+            <a href="/adddepartment">
+                <div class="icon">
+                    <i class="fa fa-folder-open" aria-hidden="true"></i>
+
+                </div>
+                <div class="name"><span data-text="Add New Department">Add New Department</span></div>
+            </a>
+        </li>
+
+        <li>
+            <a href="/addemployee">
+                <div class="icon">
+                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+
+                </div>
+                <div class="name"><span data-text="Add New Employee">Add New Employee</span></div>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+</body>
+</html>
